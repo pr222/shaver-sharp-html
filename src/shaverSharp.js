@@ -19,7 +19,7 @@
  * @returns {string} Returns a starting tag as a string.
  */
 export function createBeginTag (tagName) {
-  // TODO: Write this code first
+  return '<' + tagName + '>'
 }
 
 /**
@@ -29,7 +29,7 @@ export function createBeginTag (tagName) {
  * @returns {string} Returns a closing tag as a string.
  */
 export function createEndTag (tagName) {
-  // TODO: Write this code second
+  return '</' + tagName + '>'
 }
 
 /**
