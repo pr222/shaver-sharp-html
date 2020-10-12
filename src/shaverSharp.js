@@ -40,7 +40,12 @@ export function createEndTag (tagName) {
  * @returns {string} Returns an element as a string.
  */
 export function createElement (tagName, innerHTML = '') {
-  // TODO: Write this code third
+  // If stringis empty only return opening tag.
+  if (innerHTML.length === 0) {
+    return createBeginTag(tagName)
+  } else {
+    return createBeginTag(tagName) + innerHTML + createEndTag(tagName)
+  }
 }
 
 /**
